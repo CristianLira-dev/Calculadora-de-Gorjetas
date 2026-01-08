@@ -19,18 +19,18 @@
   align-items: center;
   gap: 10px;
   font-family: var(--bold);
-  font-size: var(--f5);
+  font-size: var(--f4);
 }
 .FundoNotinha{
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  padding: 12px;
+  padding: 24px;
   background: linear-gradient(to bottom, #ffffff 0%, #fafbfc 100%);
   border-radius: 24px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  width: 300px;
+  width: 400px;
   height: 30rem;
 }
 .title-card{
@@ -38,16 +38,35 @@
   font-size: var(--f3);
   margin: 0 0 30px 0;
 }
+label{
+  width: 100%;
+  font-family: var(--light);
+  font-size: var(--f2);
+}
 .inputs{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  margin: 0 0 30px -33px;
+}
+button{
+  background-color: var(--cor-verde-escuro-3);
+  width: 100%;
+  padding: 16px 0;
+  font-family: var(--semibold);
+  font-size: var(--f3);
+  border-radius: 24px;
+  color: var(--cor-branco);
+  transition: all 0.3s;
+}
+button:hover{
+  transform: scale(1.03);
 }
 input {
-  width: 100%;;
-  padding: 0.875rem;
+  width: 110%;
+  padding: 1rem;
   font-size: 1rem;
   border: 1.5px solid #000;
   border-radius: 0.5rem;
