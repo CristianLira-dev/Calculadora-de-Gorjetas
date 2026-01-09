@@ -49,7 +49,7 @@ body.bloqueado {
 
 ::selection {
   color: var(--cor-branco);
-  background-color: var(--cor-azul-claro);
+  background-color: var(--cor-verde);
 }
 
 a,
