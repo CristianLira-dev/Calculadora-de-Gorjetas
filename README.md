@@ -40,10 +40,10 @@ Neste projeto, foquei em melhorar minha arquitetura de componentes e lógica de 
 
 ```bash
 # Clone este repositório
-$ git clone [https://github.com/SEU_USUARIO/NOME_DO_REPO.git](https://github.com/SEU_USUARIO/NOME_DO_REPO.git)
+$ git clone https://github.com/CristianLira-dev/Calculadora-de-Gorjetas.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd NOME_DO_REPO
+$ cd calculadora-de-gorjetas
 
 # Instale as dependências
 $ npm install
