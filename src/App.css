@@ -49,14 +49,45 @@ label{
   font-family: var(--semibold);
   font-size: var(--f2);
 }
-.inputs{
+.input-group {
   display: flex;
-  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  font-family: var(--light);
+  border: 2px solid #000; 
+  border-radius: 8px;  
+  box-shadow: 4px 4px 0 #000;
+  background-color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  transition: all 0.2s ease;
+  margin: 0 0 10px 0;
+
+}
+
+.input-group:focus-within {
+  box-shadow: 6px 6px 0 #000;
+  transform: translate(-2px, -2px);
+  background-color: #fff;
+}
+.icon-wrapper {
+  display: flex;
   align-items: center;
-  flex-direction: column;
-  gap: 20px;
-  margin: 0 0 30px -43px;
-  padding: 0 40px;
+  justify-content: center;
+  padding: 0 10px; 
+  background-color: var(--cor-bege); 
+  border-right: 2px solid #000;
+  color: #000;
+}
+
+.input-group input {
+  width: 100%;
+  border: none; 
+  outline: none; 
+  background: transparent; 
+  padding: 12px; 
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
 }
 button{
   background-color: var(--cor-verde-escuro-3);
@@ -114,4 +145,48 @@ input:focus {
   align-items: start;
   flex-direction: column;
   gap: 10px;
+}
+.iconeInput{
+  border-radius: 10px;
+  background-color: var(--cor-bege);
+  padding: 5px;
+}
+.slider-container {
+  position: relative;
+  margin: 8px 0 10px 0;
+  padding: 0 5px;
+}
+
+.range-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  outline: none;
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 27px;
+  height: 27px;
+  background: var(--cor-verde-escuro-2);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.1s;
+}
+
+.range-slider::-webkit-slider-thumb:active {
+  transform: scale(1.1);
+  background: #71B280;
+}
+hr{
+  position: absolute;
+  top: 15px;
+  background-color: var(--cor-verde-escuro-2);
+  width: 87%;
+  border-radius: 20px;
+  margin: 0 0 0 15px;
+  height: 5px;
 }
